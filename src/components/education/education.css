@@ -1,0 +1,89 @@
+.education__container{
+    display: grid;
+    grid-template-columns: 90fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.education__container > div{
+
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    align-items: center;
+}
+
+.education__container > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.education__container > div h3{
+
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+
+}
+
+.education__container > div h4{
+
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+
+}
+
+
+.education__content{
+  display: flex;
+  flex-direction: column; /* Menambahkan properti ini agar teks berada di tengah secara vertikal */
+  align-items: center; /* Menambahkan properti ini agar teks berada di tengah secara horizontal */
+  gap: 1rem;
+}
+
+.education__details{
+    display: flex;
+    flex-direction: column; /* Menambahkan properti ini agar teks berada di tengah secara vertikal */
+    align-items: center; /* Menambahkan properti ini agar teks berada di tengah secara horizontal */
+    gap: 1rem;
+}
+
+
+/* ==== MEDIA QUERIES (MEDIUM DEVICES) ==== */
+
+@media screen and (max-width: 1024px) {
+
+    .education__container{
+        grid-template-columns: 1fr;
+    }
+     .education__container > div{
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+     }
+
+     .education__content{
+        padding: 1rem;
+     }
+  }
+  
+  /* ==== MEDIA QUERIES (SMALL DEVICES) ==== */
+  
+  @media screen and (max-width: 600px) {
+
+    .education__container{
+        gap: 1rem;
+
+    }
+
+    .education__container > div{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+  
+
+  }
+  
